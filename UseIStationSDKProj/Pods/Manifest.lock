@@ -1,0 +1,24 @@
+PODS:
+  - IStation_iOS_SDK (1.0.0):
+    - Socket.IO-Client-Swift (~> 13.2.1)
+  - Socket.IO-Client-Swift (13.2.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.5)
+
+DEPENDENCIES:
+  - IStation_iOS_SDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IStation_iOS_SDK
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  IStation_iOS_SDK: c6225970f394f74e301ead7fe97ded875904905a
+  Socket.IO-Client-Swift: b94943e2fb916fe2f95244b9ed21828634002280
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+
+PODFILE CHECKSUM: 8d48b0e8cd481dd9abed4f85ddef4bbc6e74c519
+
+COCOAPODS: 1.5.3

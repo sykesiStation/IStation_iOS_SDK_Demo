@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I1s-nP-iJk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2n-h5-kv3">
+                                <rect key="frame" x="156" y="164" width="62" height="30"/>
+                                <state key="normal" title="联系客服"/>
+                                <connections>
+                                    <action selector="pushControllerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqG-b7-3gN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kb0-PL-QUv">
+                                <rect key="frame" x="70" y="214" width="234" height="30"/>
+                                <state key="normal" title="联系客服[Present View Controller]"/>
+                                <connections>
+                                    <action selector="presentControllerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tpw-U1-h81"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20O-Ap-SVc">
+                                <rect key="frame" x="141" y="264" width="92" height="30"/>
+                                <state key="normal" title="切换聊天样式"/>
+                                <connections>
+                                    <action selector="switchChatLayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOf-rz-EmF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcJ-o1-GIv">
+                                <rect key="frame" x="172" y="314" width="31" height="30"/>
+                                <state key="normal" title="注销"/>
+                                <connections>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="90N-Nk-hi2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kb0-PL-QUv" firstAttribute="centerX" secondItem="caW-zw-Un6" secondAttribute="centerX" id="905-c8-0hJ"/>
+                            <constraint firstItem="P2n-h5-kv3" firstAttribute="centerX" secondItem="caW-zw-Un6" secondAttribute="centerX" id="C3U-nt-MFt"/>
+                            <constraint firstItem="xcJ-o1-GIv" firstAttribute="centerX" secondItem="caW-zw-Un6" secondAttribute="centerX" id="Jmb-L6-gU2"/>
+                            <constraint firstItem="P2n-h5-kv3" firstAttribute="centerX" secondItem="caW-zw-Un6" secondAttribute="centerX" id="ZYo-JK-Eoe"/>
+                            <constraint firstItem="Kb0-PL-QUv" firstAttribute="top" secondItem="P2n-h5-kv3" secondAttribute="bottom" constant="20" id="cKE-OZ-dKv"/>
+                            <constraint firstItem="20O-Ap-SVc" firstAttribute="top" secondItem="Kb0-PL-QUv" secondAttribute="bottom" constant="20" id="eP9-m1-KC4"/>
+                            <constraint firstItem="xcJ-o1-GIv" firstAttribute="top" secondItem="20O-Ap-SVc" secondAttribute="bottom" constant="20" id="fal-D8-J12"/>
+                            <constraint firstItem="20O-Ap-SVc" firstAttribute="centerX" secondItem="caW-zw-Un6" secondAttribute="centerX" id="m0y-j8-FZs"/>
+                            <constraint firstItem="P2n-h5-kv3" firstAttribute="top" secondItem="caW-zw-Un6" secondAttribute="top" constant="100" id="pyL-dd-CV8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="caW-zw-Un6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BKV-X3-kwk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="335"/>
+        </scene>
+        <!--Common Navigation Controller-->
+        <scene sceneID="0WD-fP-Uqm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I1s-nP-iJk" customClass="CommonNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aii-vl-j7p">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pBB-LF-T8P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLN-mC-pYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="335"/>
+        </scene>
+    </scenes>
+</document>
